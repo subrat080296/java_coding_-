@@ -1,0 +1,1785 @@
+Operators
+====================
+An Operator is an symbol which is perform an Operation.
+
+Types of Operator : There 6 type of operator in java 
+1)Arithmetic Operator=>+,-,*,/,%
+2)Relational Operator=> >, >=,<,<=,!=,==,
+3)Logical Operator=>&&, ||, !,
+4)Increment Operator / Decrement Operator=> ++,--,
+5)Assignment Operator=> =,+=,-=,/=,%=,
+6.Conditional/ Ternary Operator=> ?
+
+Examples
+==============
+Arithmetic Operator:+,-,*,/,%
+
+public class OperatorDemo{
+public static void main (String[] args)
+{
+int a=10;
+int b=70;
+System.out.println("Sum of a and b is:" +(a+b))
+System.out.println("Sum of a and b is:" +(a+b))
+System.out.println("Sum of a and b is:" +(a+b))
+System.out.println("Sum of a and b is:" +(a+b))
+}
+}
+
+
+Methods:-
+==================
+=>Method is created inside of class
+=>There is some repetitively then we can use method we can run it.
+there are 2types of methods
+1=Build in Method
+2=User defined Method
+
+
+1.No parameter and no return value
+2.No parameter but Returns value
+
+1.How many ways we store the data in to variables?
+2.How many types of keyword in java?
+======================================
+Type Casting==>Converting value from one type to another type.
+============
+There are 2 type of type casting
+1.Upcasting/Widening==>Converting value from smaller to higher/larger type, Upcasting is automatic process just assign the value
+2.downcasting/Narrowing==>Converting the value from larger to smaller type
+
+
+Sting
+=============
+Discuss common String methods like substring(), indexOf(), replace(), trim(), split(), concat(), toLowerCase(), toUpperCase(). Provide examples of their usage.
+
+(1)Find the even or odd number?
+
+package new_project;
+
+public class OddNumber1to100 {
+
+	public static void main(String[] args) {
+   	
+       for(int i=1; i<=100;i++)
+   {
+	   if(i% 2!=0)
+	   {
+          System.out.println(i+ " "+"Odd");
+	}
+else{
+System.out.println(i+" "+"even");
+}
+
+}
+}
+
+(2) PrimeNumber
+
+Class Prime_Number
+{
+public static void Main (String []args)
+{
+int C=29;
+int temp=0;
+for (int i=2; i<=C-1;i++)
+{
+if (C%i==0)
+{
+temp=temp+1
+}
+}
+if temp==0
+{
+System.out.println("number is prime");
+}
+else
+{
+System.out.println("number is not prime");
+}
+}
+}
+
+(3) Sum of 2 Number
+ 
+
+Class SumNumber
+{
+Public static void main (String []args)
+{
+int i=5;
+int j=7;
+int sum=i+j;
+System.out.println(sum);
+}
+}
+
+
+(4)find the Larger Number between 2.
+
+public class LargerNumber
+{
+Public Static void main (String[] args)
+{
+int i=50;
+int j=70;
+if (i>j);{
+system.out.println("i is Larger");
+}
+else
+{
+syatem.out.println("j is Larger");
+}
+}
+
+(5) (4)find the Larger Number between 3.
+
+public class LargeNumber
+{
+public static void main (String[] args)
+{
+int a=10,
+int b=80,
+int c=45;
+if ( a>b && a>c){
+System.out.println("a is greater")
+}
+else if (b>a && b>c)
+{
+system.out.println("b is greater");
+}
+else
+{
+System.out.println("C is greater");
+}
+}
+
+(6)Swap 2 number with out any third variable.
+
+package new_project;
+
+public class SwapNumber {
+	
+	public static void main (String[] args)
+	{
+	
+int a= 10, b= 15;   
+   a=a+b ;  //a=25
+   b=a-b  ; //b=10  (25-15)
+   a=a-b;  //a=15 (25-10)
+
+   System.out.println(a);
+   System.out.println(b);
+   
+}
+}
+
+
+(7)Leap Year
+
+public class LeapYear
+{
+Public Static void main (String[] args)
+{
+int year=2020
+{
+if (year%4==0)
+}
+s.o.pln(Leap year);
+}
+else
+{
+s.o.pln(not a leap year);
+}
+if(year%100==0)
+{
+s.o.pln(not a leap year);
+}
+else
+{
+s.o.pln(leap year)
+}
+if (year%400==0)
+{
+s.o.pln(not a leap year)
+}
+else
+{
+s.o.pln(leap year);
+}
+}
+}
+
+    OR
+public class Leapyear
+public static void main (String []args)
+{
+int year=2023;
+{
+if(Year%4==0)//(Year%400==0 && Year%100!=0)
+{
+S.O.Pln( "Leap Year");
+}
+else
+{
+s.o.pln("not a leap year");
+}
+}
+
+(8)1,2,3,5,8,13........//(1+2=3,2+3=5,3+5=8...)//0 1 1 2 3 5 8 13 21 34
+
+Fibonacci Series.
+public class Fibonacci_series
+{
+public static Void main (String[]args)
+{
+int a=0,b=1,
+int c;
+System.out.println(+a"--"+b);
+for(int i=1;i<=10,i++);
+{ 
+ c=a+b;
+s.o.pln(--+c);
+a=b
+b=c
+}
+}
+
+(9) Palindrome Number:
+
+class Palindrome_Number
+{
+public static void main(String[]args)
+{
+int no=172;
+int original=no;
+int reverse=0;
+int reminder=0;
+
+while(no>0)
+{
+reminder=no%10;
+reverse=reverse*10+reminder;
+no=no/10;
+}
+if(reverse==original){
+System.out.println("Pallindrome number");
+}
+else{
+System.out.println("not pallindrome");
+}
+}
+}
+
+
+
+10.print words in arrays
+
+Class CountWords
+{
+public static void main (String [] args)
+{
+int array[]={one two three four ten};
+
+int (int=i;i<=array.length;i++){
+Sysetem.out.println(array[i]);
+}
+}
+
+
+SCANNER:
+
+11.
+import java.util.Scanner;
+
+public class Main {
+public static void main(String[] args) {
+// Create a Scanner object
+Scanner input = new Scanner(System.in);
+
+// Prompt the user to enter their name
+System.out.print("Enter your name: ");
+
+// Read a line of text from the user
+String name = input.nextLine();
+
+// Print the user's name
+System.out.println("My name is " + name);
+
+// Close the scanner
+input.close();
+}
+}
+
+12.
+
+public static void main (String[] args)
+{
+    Scanner input = new Scanner(System.in);
+    double[] numbers = new double[5];
+
+    for (int i = 0; i < numbers.length; i++)
+    {
+        System.out.println("Please enter number");
+        numbers[i] = input.nextDouble();
+    }
+}
+
+13.
+Here, we are demonstrating the use of nextInt() method. This method reads the integer value entered by the user. We are using the nextInt() method twice to get two numbers from user and then we are printing the sum of entered numbers.
+
+Import java.util.Scanner;
+
+class testScanner
+{
+public static void main (String args[])
+{
+Scanner sc=new Scanner(system.in)
+System.out.println("Please enter the first Number: ");
+
+int num1 = scan.nextInt();
+System.out.println("Please enter the second number: ");
+Scan num2=Scan.nextInt();
+System.out.println("Sum of entered number":(num1+num2));
+scan.close();
+}
+}
+
+14.
+In the following example, user is asked to enter the full name, however the next() method captured only the first name as it stopped reading input as soon as it found a whitespace. We will revisit the same example next with nextLine() method to get the desired output.
+
+import java.util.Scanner;
+class TestScanner{
+public static void main (String args [])
+{
+Scanner scan=new Scanner(System.in);
+System.out.println("Please enter full name: ");
+Strig name=scan.nextLine();
+System.out.print("You name: " +name);
+scan.close();
+}
+}
+
+15>
+Example 4: Java Scanner nextLine() method
+Let’s revisit the same example. As you can see, using nextLine(), we can read the complete user input. This is because this method reads a complete line
+
+import java.util.scanner;
+class TestScanner2
+{
+public static void main(String [] args)
+{
+Scanner sc=new Scanner(System.in)
+System.out.println("Enter your name: ");
+String name=sc.nextLine();
+System.our.println("you name: " +name);
+scan.close()
+}
+}
+
+16:
+Example 5: Java Scanner useDelimiter() Method
+The userDelimiter() method is used to specify a delimiter character in the input. In the following example, we have specified ‘/’ as a delimiter. We are also using hasNext() method of Scanner class to read the input separated by the delimiter.
+
+Import java.util.scanner;
+class TestScanner3
+{
+public static void main (String [] args)
+{
+Scanner sc=new Scanner("BeginnersBook/Chaitanya/Website")
+ scan.useDelimiter("/");
+System.out.println(while(scan.hasNext()){
+System.out.println(scan.next());
+   }
+    scan.close();
+  }
+}
+ OR
+
+import java.util.Scanner;
+public class JavaExample {
+  public static void main(String args[]){
+    // Initializing a Scanner object
+    Scanner scan = new Scanner("BeginnersBook/Chaitanya/Website");
+
+    //Initialize the delimiter in useDelimiter() method
+    scan.useDelimiter("/");
+
+    //printing the strings separated by delimiter
+    while(scan.hasNext()){
+      System.out.println(scan.next());
+    }
+    scan.close();
+  }
+}
+
+
+17.Write a payment program for card and paypal.
+class payment{
+static void m1()
+ int i=(134212,676)
+{
+System.out.println("card payment")
+}
+void m2()
+String s=abc@gmail.com
+{
+System.out.println("paypal payment")
+}
+public static void main (String[] args)
+{
+payment p=new payment(1323;666)
+payment p1=new payment(abc@gmail.com)
+}
+}
+
+
+18.Check the year is leap year or not?
+class Leapyear1
+{
+public static void main (String[] args){
+int year=2025;
+{
+if((year%400==0)||((year%4==0)&&(year%100==0)))
+System.out.println(year+ "Leap year")
+else
+{
+System.out.println(year +"not a leap year");
+System.out.println();
+}
+}
+==================
+Using Scanner with user input?
+class LeapYear2
+{
+public static void main (String[] args){
+Scanner sc=new Scanner(System.in)
+System.out.println("Enter the year")
+int year=sc.nextInt();
+{
+if((year%400==0||year%4==0)&&(year%100!=0))
+System.out.println(year)
+
+else
+{
+System.out.println(Year not a leap year)
+}
+}
+
+
+19.how to print marks obtained marks in each subject.
+math-67
+english-88
+science-86
+odia-92
+sans-30
+history-55
+public static void main (String[] args)
+{
+int marks=6;
+Switch(marks){
+case: 67 System.out.println("math");break;
+case: 86 System.out.println("science");break;
+
+
+
+20.Ptint reverse number ,123456.
+package reverse;
+class Reverse_Number
+{
+public static void main (String[] args)
+{
+int no=123456;
+int reverse=0;
+int reminder=0;
+while(no>0)
+{
+ reminder=no%10;  (To determine the reminder)
+
+  reverse=reverse*10+reminder;
+}
+no=no/10;
+}
+System.out.println(reverse);
+}
+}
+
+21.
+public class  SecondLargest
+{
+public static void (String[] args)
+{
+int[] a= {34,78,56,34,90}
+int secondlargest=0;
+for (int i=0;i<a.length;i++)
+{
+for (int j=i+1;j<a.length;j++)
+{
+if (a[i]>a[j]
+{
+
+secondlargest=a[i];
+a[i]=a[j]
+a[j]=secondlargest;
+}
+System.out.println(a[j]);
+}
+}
+
+22. Write a Java program to reverse a string without using built-in functions.
+or
+
+public class Reverse_Strig_demo1 {
+
+	public static void main(String[] args) {
+		String s="Subrata";
+		for (int i=s.length()-1;i>=0;i--){	
+		System.out.print(s.charAt(i));
+	}
+	}
+}
+
+22. Reverse the number 12345?
+Class Test;
+public Test ReverseNumber{
+public static void main (String[] args){
+int number=12345;
+int reverse=0;
+int digit=0;
+while(number>0)
+digit=number%10;
+reverse=reverse*10+digit;
+number/=10;
+}
+System.out.println(reverse);
+}
+}
+
+23.Serialise the number in accending order 65734567?
+import java.util.Arrays;
+public static void main( String [] args){
+int [] a=65734567;
+for (int i>0){
+Arrays.short[a];
+}
+System.out.pritln(Arrays.toString(a));
+}
+
+
+23.Sorting the word sbc,xzs,hbn,fbd,uhj,?
+String s[]={"sbc","xzs","hbn","fbd","uhj"};
+Arrays.sprt(a);
+System.out.println(Arrays.toString(a));
+}
+
+
+24.Find sum of the digits 132453?
+public static void main(String[] args){
+int number=23354325;
+int sum=0;
+int rem=0;
+while(number>0){
+rem=number%10;
+sum=sum+rem;
+number/=10;
+System.out.println(sum);
+
+25.Calculate Electric bills.
+public static void main (String[] args){
+int bills=0;
+int units=15;
+if (uints>100)
+{
+if(uints>=200)
+{
+if(uints>=300)
+{
+bills=(units*8)
+}
+else
+bills=(uints*6)
+}
+else
+bills=(units*4)
+}
+System.out.println("Electric consumed"+unis);
+System.out.println("Total bills rs"+bills)
+}
+}
+
+26.Find duplicate words in the string.
+public class Find_Duplicate_Char {
+
+    public static void main(String[] args) {
+
+        String s = "scbgdhursescsg";
+
+        System.out.println("Duplicate Characters:");
+
+        for(int i = 0; i < s.length(); i++) {
+
+            for(int j = i + 1; j < s.length(); j++) {
+
+                if(s.charAt(i) == s.charAt(j)) {
+
+                    System.out.println(s.charAt(i));
+                    break;
+                }
+            }
+        }
+    }
+}
+27.
+How to remove duplicate from string?
+class Duplicate Remove{
+public static void main (String [] args){
+String s[]="subratajena";
+String duplicate=0;
+
+for (int i=0;i<=s.length()-1;i--)
+for (int j=0;js.length();j++)
+{
+if(s.charAt(i)==s.charAt(j))
+duplicate++
+}
+System.out.println(s.charAt(i);
+}
+}
+
+28.Java program count character occurrence in a string?
+29.Java program to check if two strings are anagrams?
+30.Remove duplicate characters from a string?
+31.java program for basic login validation?
+32.Find the sum of 2 number user input.
+
+Class Sum;
+import java.util.Scanner;
+public static void main (String[] args){
+Scanner sc=new Scanner(System.in)
+System.out.println("Enter your Number")
+int a=sc.nextInt();
+int b=sc.nextInt();
+int sum=a+b;
+System.out.println(sum);
+}
+}
+33.Write a java program to compare two strings?
+34.write a program to print the entered number  in reverse?
+35.write a java program to check weather a given number is Armstrong?
+
+
+Keyword	i Java and its Description
+=========================================== 
+abstract	A non-access modifier. Used for classes and methods: An abstract class cannot be used to create objects (to access it, it must be inherited from another class). An abstract method can only be used in an abstract class, and it does not have a body. The body is provided by the subclass (inherited from)
+assert	For debugging
+Boolean	A data type that can only store true or false values
+break	Breaks out of a loop or a switch block
+byte	A data type that can store whole numbers from -128 and 127
+case	Marks a block of code in switch statements
+catch	Catches exceptions generated by try statements
+char	A data type that is used to store a single character
+class	Defines a class
+continue	Continues to the next iteration of a loop
+const	Defines a constant. Not in use - use final instead
+default	Specifies the default block of code in a switch statement
+do	Used together with while to create a do-while loop
+double	A data type that can store fractional numbers from 1.7e−308 to 1.7e+308
+else	Used in conditional statements
+enum	Declares an enumerated (unchangeable) type
+exports	Exports a package with a module. New in Java 9
+extends	Extends a class (indicates that a class is inherited from another class)
+final	A non-access modifier used for classes, attributes and methods, which makes them non-changeable (impossible to inherit or override)
+finally	Used with exceptions, a block of code that will be executed no matter if there is an exception or not
+float	A data type that can store fractional numbers from 3.4e−038 to 3.4e+038
+for	Create a for loop
+goto	Not in use, and has no function
+if	Makes a conditional statement
+implements	Implements an interface
+import	Used to import a package, class or interface
+instanceof	Checks whether an object is an instance of a specific class or an interface
+int	A data type that can store whole numbers from -2147483648 to 2147483647
+interface	Used to declare a special type of class that only contains abstract methods
+long	A data type that can store whole numbers from -9223372036854775808 to 9223372036854775808
+module	Declares a module. New in Java 9
+native	Specifies that a method is not implemented in the same Java source file (but in another language)
+new	Creates new objects
+package	Declares a package
+private	An access modifier used for attributes, methods and constructors, making them only accessible within the declared class
+protected	An access modifier used for attributes, methods and constructors, making them accessible in the same package and subclasses
+public	An access modifier used for classes, attributes, methods and constructors, making them accessible by any other class
+requires	Specifies required libraries inside a module. New in Java 9
+return	Finished the execution of a method, and can be used to return a value from a method
+short	A data type that can store whole numbers from -32768 to 32767
+static	A non-access modifier used for methods and attributes. Static methods/attributes can be accessed without creating an object of a class
+strictfp	Obsolete. Restrict the precision and rounding of floating point calculations
+super	Refers to superclass (parent) objects
+switch	Selects one of many code blocks to be executed
+synchronized	A non-access modifier, which specifies that methods can only be accessed by one thread at a time
+this	Refers to the current object in a method or constructor
+throw	Creates a custom error
+throws	Indicates what exceptions may be thrown by a method
+transient	Used to ignore an attribute when serializing an object
+try	Creates a try...catch statement
+var	Declares a variable. New in Java 10
+void	Specifies that a method should not have a return value
+volatile	Indicates that an attribute is not cached thread-locally, and is always read from the "main memory"
+while	Creates a while loop
+
+
+Java Interview questiosn:
+A2B4C3D1 Print
+AABBBBCCCD
+public class Print_Count_Words_InString {
+
+	public static void main(String[] args) {
+		String s1="ZZZZZZZZCCCCBBBBSSSS";//AABBBBCCCD
+		int count=0;
+		for (int i=0;i<s1.length();i++) {
+			if(i<s1.length()-1 && s1.charAt(i)==s1.charAt(i+1)) {
+				count++;
+			}
+			else {
+				System.out.print(s1.charAt(i)+""+count);
+				count=1;
+			}
+		}
+	}
+}
+
+Q) ANAGRAMCHECK
+import java.util.Arrays;
+
+public class Chaeck_Anagrams {
+
+	public static void main(String[] args) {
+		String s1="listen";
+		String s2="silent";
+		char[] charArray1=s1.toCharArray();//Converting string to arrays
+		char[] charArray2=s2.toCharArray();// do
+		Arrays.sort(charArray1);//sorting the arrays
+		Arrays.sort(charArray2);
+		System.out.println(Arrays.equals(charArray1,charArray2));//compare both and print
+	}
+}
+
+Q) DuplicateCharacter
+Find Duplicate Word
+Find Number of Character Digit Spacein A String
+Find Vowles Make First char of A String as capital
+Palindrome check
+Remove Number from a string
+Remove Special Character in a string
+Reverse each word in java
+String Reverse
+Swap two number
+
+Q. Can we create multiple main method & how can we access ?
+
+ans:
+  package 13
+class MainOverloading
+{
+void main(int x)
+{
+System.out.println(x);
+}
+void main(string s)
+{
+System.out.println(s);
+}
+void main (String s1, String s2)
+{
+System.out.println(s1+s2);
+}
+public static void main(String [] args);
+{
+MainOverloading ov=new MainOverloading;
+ov.main(100);
+ov.main("john")
+on.main("hello","jhon");
+}
+}
+
+
+2.write a payment java program
+public class Payments
+{
+void PaymentMethod(int cardnum,int cvv){
+System.out.println("This is a credit card method");
+}
+void paymentMethod(String email)
+System.out.println("This a paypal method");
+}
+public static void main (String[] args);
+{
+Payments p=new Payments()
+p.paymentMethod(23478,989);
+Payments p=new Payments()
+p.paymentMethod(abc@gmail.com);
+}
+}
+
+3.write a program to find vowless in your name.
+
+class vowles{
+public static void main(String[] args)
+{
+String str="Subrata";
+for (char ch:str.toCharArray()){
+switch(Character.toLowerCase(ch)){
+case 'a':
+case 'e':
+case 'i':
+case 'o':
+case 'u':
+System.out.println(ch+ " ");
+break;
+default:
+break;
+}
+}
+System.out.println();
+}
+}
+
+
+SELENIUM
++++++++++++++++++++
+30)
+Program for cssSelector:ID,Name,PartiaLinktext,Linktext,TagName,ClassName.
+Package_1;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.ChromeDriver;
+import org.openqa.selenium.By;
+public class CssSelector{
+public static void main (String[] args){
+WebDriver driver=new chromeDriver();
+driver.get("url link");
+driver.manage().window().maximizw();
+//Nmae
+driver.findElement(By.name(" Search name")).sendKeys("T shirt");
+//Id
+driver.findElement(By.id(" id ")).isDisplayed();
+//linktext
+driver.findElement(By.linkText("//input[@ Search]")).click();
+//Partiallinktesxt
+driver.findElement(By.partiallinkText(" Search")).click();
+//TagName
+link<WebElements>links=driver.findElements(By.tagName(" Search Tag"));// TagName and ClassName used for multiple webelement determine.
+System.out.println(links.size());
+//ClassName
+link<WebElement>images=driver.findElements(By.className(" ClassName"));
+System.out.println(images.sixe());
+
+31) Write a program for open url searh some thing and click on result links and count the links and close a specific window?
+package_1;
+inport
+public class WebDriver_Demo{
+public static void main( String[] args){
+WebDriver driver=new ChromeDriver();
+driver.get("url");
+driver.manage().window().maximize();
+driver.findElement(By.xpath("//input").sendKeys("Selenium");
+driver.findElement(By.linkText("//input1").click();
+driver.findElement(By.linkText("//input2").click();
+driver.findElement(By.linkText("//input3").click();
+driver.findElement(By.linkText("//input4").click();
+driver.findElement(By.linkText("//input5").click();
+List<WebElements> mylist=driver.getWindowHandles();
+System.out.println("Total window count:"+ myslist.size());
+driver.getWindowTitle();
+driver.getWindowTitle().equals(Selenium);
+driver.quit();
+
+32) Select  checkbox using automation?
+package_28;
+import org.openqa.selenium.ChromeDriver;
+import org.openqa.selenium.By.
+import java.ui.ErbElement;
+import java.util.List;
+import org.openqa.selenium.WebDriver;
+public class Selector_Demo
+{
+public static void main( String[] args){
+WebDriver driver=new ChromeDriver();
+driver.get("url");
+driver.manage().window().maximize();
+driver.findElement(By.xpath("//input[@url]")).click();
+// Select All Checkboxes
+List<WebElemet>checkboxes=driver.findElements(By.xpath("//input[@'checkboz' and 'name']");
+for(int i=0;i<checkboxes.size();i++){
+checkboxes.get(i).click();
+ or using enhance forloop
+for (WebElement checkbox:checkboxes)
+{
+checkbox.click();
+}
+
+//Slect lats3/first4 or any instracted any checkboxes
+for(int i=3;i<checkboxes.size();i++)
+{
+checkboxes.get(i).click();
+}
+//first 3 checkboxes
+for(int i=0;i<3;i++)
+{
+checkboxes.get(i).click();
+}
+//Uncheck checkboxes which are already selected.
+for(int i=0;i<3;i++){
+checkboxes.get(i).click();
+}
+for(int i=0;i<checkboxes.size();i++){
+if(checkboxes.get(i).isSelected())
+{
+checkboxes.get(i).click();
+}
+}
+
+33)
+How to Handles popup in selenium?
+packeage_29;
+public class Alert_Demo{
+public static void main(String [] args){
+WebDriver driver=new ChromeDriver();
+driver.get("url");
+driver.manage().window().maximize();
+driver.findElement(By.xpath("//input[@ url]").clock();
+driver.switchTo().alert().accept();
+   or
+Alert myalert=driver.switchTo().alert();
+System.out.println(myalert.getText());
+myalert.accept();
+//Confirmation window using ok or cancel button
+driver.findElement(By.xpath("//input[@ url]").clock();
+driver.switchTo().alert().accept();//close alert with OK button
+driver.switchTo().alert().dismiss();//close alert with cancel button
+//close window using some text in input box .
+
+driver.findElement(By.xpath("//input[@ url]").clock();
+Alert myaler1=driver.switchTo().alert();
+myalert1.sendKeys("Hello");
+myalert.accept();
+
+//Handle Alert using Explicit 
+WebDriver driver=new ChromeDriver();
+WebDriver wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+driver.get("url");
+driver.manage().window().maximize();
+driver.findElement(By.xpath("//input[@ url]").clock();
+Alert myalert=wait.until(ExpectedCondition.alertIsPresent())
+System.out.println(myalert.getText());
+myalert.accept();
+
+33)
+Handle authoneticate in selenium
+
+WebDriver driver=new ChromeDriver();
+driver.get("url");(http://username:password@url)//this url fromat
+
+34)https://blazedemo.com/
+
+WebDriver driver=new Chrome Driver();
+driver.get(https://blazedemo.com/);
+driver.manage().timeout.(Duration.OfSeconds(10));
+driver.manage().window().maximize();
+List<WebElement>OP=driver.findElement(By.xpath("//select[@name='fromPort']").click();
+for (WebElement options:OP){
+System.out.println(options.getText());
+if(options.equals(Paris).click();
+List<WebElement>OP1=driver.findElement(By.xpath("//select[@name='toPort']").click();
+for (WebElement options1:OP1){
+System.out.println(options1.getText());
+if(options.equals(London).click();
+Thread.sleep(10);
+driver.findElement(By.xpath("//input[@type='submit']").click();
+
+int rows=driver.findElements(By.xpath("//table[@class='table']//tr")).size();
+//int rows=driver.findElements(By.tagName("table")).size()
+System.out.println(rows);
+int column=driver.findElements(By.xpath("//table[@name='table']//th")).size();
+System.out.println(column);
+for (int r=2;row<=rows.size();row++){
+for (int c=2;column<=column.size();column++){
+String value=driver.findElement(By.xpath("//table[@name='table']//tr["+r+"]//td["+c+"]")).getText();
+System.out.println(Value);
+int total=0;
+for(int r=2;r<=rows;r++) {	
+String Price=driver.findElement(By.xpath("//table[@name='table']//tr["+r+"]//td[4]")).getText();
+System.out.println(Price);
+		}
+Q)Wht is the Difference between Implicitly wait and Explicit wait and Fluent Wait?
+
+Implicit Wait
+What it is?
+An implicit wait tells Selenium to wait for a fixed amount of time before throwing a NoSuchElementException when trying to find an element.
+Applies globally to all elements
+Selenium keeps polling the DOM until the element is found or the time expires
+Set once, usually at the start of the test
+Example (Java)
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+WebElement loginButton = driver.findElement(By.id("login"));
+loginButton.click();
+
+Explicit Wait
+What it is?
+An explicit wait waits for a specific condition to occur before proceeding.
+Applied only to a specific element
+More precise and flexible
+Uses WebDriverWait + ExpectedConditions
+Example (Java)
+WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+WebElement loginButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("login")));
+loginButton.click();
+
+Fluent Wait
+Definition?
+A Fluent Wait is a type of explicit wait that allows:
+Custom polling frequency
+Ignoring specific exceptions
+Maximum control over wait behavior
+Key Points
+
+Advanced form of explicit wait
+Best for highly dynamic applications
+Most flexible
+
+Example (Java)
+Wait<WebDriver> wait = new FluentWait<>(driver)
+        .withTimeout(Duration.ofSeconds(30))
+        .pollingEvery(Duration.ofSeconds(2))
+        .ignoring(NoSuchElementException.class);
+WebElement searchBox = wait.until(
+    driver -> driver.findElement(By.id("search")));
+searchBox.sendKeys("Selenium");
+
+How It Works
+
+Waits up to 30 seconds
+
+Checks every 2 seconds
+
+Ignores NoSuchElementException until timeout
+
+package Day_37;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+Q)Sroll te pag using Javascript in selenium?
+
+public class Scorlling_Page_demo {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.countries-ofthe-world.com/flags-of-the-world.html");
+		driver.manage().window().maximize();
+		
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		//Scroll down page
+		
+	//	js.executeScript("window.scrollBy(0,5000)"," ");
+		
+	//	System.out.println(js.executeScript("return window.pageYOffset;"));
+		
+		//Scroll till India or any target
+	//	WebElement india=driver.findElement(By.xpath("//img[@alt='Flag of India']"));
+	//	js.executeScript("arguments[0].scrollIntoView();",india);
+	//	System.out.println(js.executeScript("return window.pageYOffset;"));
+		
+		//Scroll till end of the page
+		    js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+			System.out.println(js.executeScript("return window.pageYOffset;"));
+			
+			//Scrolling upto top or initial of the page
+			Thread.sleep(5000);
+			js.executeScript("window.scrollBy(0,-document.body.scrollHeight)");
+
+	}
+
+}
+
+Q)Uisng Selenium open new TAB or new wiindow in a single program?
+
+package Day_36;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Switch_New_with_NewURL {
+
+	public static void main(String[] args) {
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://text-compare.com/");
+		//driver.switchTo().newWindow(WindowType.TAB);
+		driver.switchTo().newWindow(WindowType.WINDOW);
+		driver.get("https://demo.nopcommerce.com/login?returnUrl=%2F");
+		
+		driver.manage().window().maximize();
+		
+
+	}
+
+}
+
+1)
+Packae_1;
+public class Wait_Demo{
+public static void main(String[] args){
+WebDriver driver=new ChromeDriver();
+driver.get("");
+driver.manage().window().maximize();
+WebDriver Wait=new WebDriverWait(Duration, OfSeconds(10));
+driver.findElement(By.xpath(//input[@placeholder='Username'])).sendKeys("User123")
+driver.findElement(By.xpath(//input[@placeholder='Password'])).sendKeys("pasword123")
+WebElement LoginButton=wait.until(ExcpectedConditions.elementToBeClickable(by.id("")));
+
+Q)Sum of digits?
+Package_java_1
+
+class Test_Java_Demo{
+public static void main (String[] args){
+int number=12345;
+int sum=0;
+int digits;
+ while(number>0){
+digits= number%10;
+sum=sum+digits;
+number=number/10;
+}
+System.out.println(sum);
+}
+
+Q) Find the 2nd Largest number(12,90,56,34,89,63)
+package_Demo;
+import java.util.Arrays;
+public class SecondLragest_Demo{
+public static void main (String[] args){
+int arr[]={12,90,56,34,89,63};
+Arrays.sort(arr);
+System.out.println(arr[arr.length-2]);
+}
+}
+
+Q)Remode Duplicate Character=Subratajena
+package_Test1
+
+public class Duplicate_Demo{
+public static void main(String[] args){
+String duplicate ="";
+String s="subratajena";
+for (int i=0;i<s.length();i++)
+{
+char ch=s.charAt(i)
+if(duplicate.indexOf(ch)==-1){
+duplicate+=ch;
+}
+}
+System.out.println(duplicate)
+}
+Q)Java Selenium Setup in System?
+->First Install JDk=>Search JDK download=>Oracle=>Java download=>Select latest Verion and Window=>click on x64 MSI Installer=>Open the download file and Nxt..Next..
+1)
+import java.util.Arrays;
+
+public class MissingNumber {
+    public static void main(String[] args) {
+        int[] a = {1, 2, 3, 4, ,6,7};
+        Arrays.sort(a);
+
+        int missing = a.length + 1;
+
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] != i + 1) {
+                missing = i + 1;
+                break;
+            }
+        }
+
+        System.out.println("Missing number: " + missing);
+    }
+}
+
+Q)Reverse the words injava (Java is prwerfull)? 
+Output: "powerful is Java"
+
+public class ReverseWords {
+    public static void main(String[] args) {
+        String input = "Java is powerful";
+        
+        String[] words = input.split(" ");
+        StringBuilder reversed = new StringBuilder();
+        
+        for (int i = words.length - 1; i >= 0; i--) {
+            reversed.append(words[i]).append(" ");
+        }
+        
+        System.out.println("Reversed sentence: " + reversed.toString().trim());
+    }
+}
+
+
+Q)Character A Occurance BANANA?
+
+public class occurance_demo{
+public static void main( String[] args){
+String s="BANABNA";
+char targetch='A';
+int count=0;
+for (int i=0;i<s.length();i++){
+if(s.charAt(i)==targetch)
+{
+count++;
+}
+}
+System.out.println(count);
+}
+}
+
+Q) Print howmany times B is repeated in bbbbbcccccccccssssssssssihdcxghdcbdjgabd?
+
+class print_b{
+public static void main (String [] args){
+String str="bbbbbcccccccccssssssssssihdcxghdcbdjgabd";
+
+char targetchr='b';
+int count=0;
+for (int i=0;i<str.length();i++){
+if(str.charAt(i)==targetchr){
+count++;
+}
+}
+System.out.println(count);
+}
+}
+
+Q)find max and min number 12,28,92,90,24,10,56?
+import java.util.Arrays;
+class min_max{
+public static void main (String [] args){
+ 
+int []arr={12,28,92,90,24,10,56};
+Arrays.sort(arr);
+System.out.println(arr[0]);
+System.out.println(arr[arr.length-1]);
+
+}
+}
+
+
+What is a String in Java?
+
+How to Reverse a String in Java?
+
+How to check if a String contains only digits?
+
+How to count vowels and consonants in a String?
+
+What is String Pool and object count for String s1 = "Hello"; String s2 = "Hello";?
+
+Difference between equals() and == for String comparison?
+
+What is immutability of String in Java?
+
+How to convert a String to uppercase or lowercase?
+
+How to find substring in a String?
+
+How to replace a substring in a String?
+
+How to split a String based on a delimiter?
+
+How to check if a String is null or empty?
+
+Difference between String, StringBuilder, and StringBuffer?
+
+How to convert String to char array and why?
+
+How many String objects are created in new String("Hello")?
+
+How to concatenate Strings efficiently?
+
+How to check if a String contains a substring?
+
+How to trim leading and trailing spaces from a String?
+
+How to compare two Strings ignoring case?
+
+How to find the index of a character or substring?
+
+How to get the length of a String?
+
+How to convert String to integer and vice versa?
+
+How to check if a String starts with or ends with a substring?
+
+How to remove a character from a String?
+
+How to reverse words in a sentence?
+
+How to check if two Strings are anagrams?
+
+How to implement substring without using built-in?
+
+How to convert a String to a byte array?
+
+How to check if a String is palindrome?
+
+How to remove duplicate characters from a String?
+
+Q) number occurance in an array{12,29,1,2,3,03,20,3,76,89,76}
+
+class number_occurance{
+public static void main (String [] args){
+int []ar={12,29,1,2,3,03,20,3,76,89,76};
+int count=1;
+
+for (int i=0;i<ar.length;i++){
+if(i<ar.length-1 && ar[i]==ar[i+1])
+{
+count++
+}
+System.out.println(ar[i]+ count);
+}
+else{
+System.out.println(ar[i]);
+count=1;
+}
+}
+
+class NumberOccurrence {
+    public static void main(String[] args) {
+
+        int[] ar = {12,29,1,12,3,3,20,3,76,89,76};
+        int count = 1;
+
+        for (int i = 0; i < ar.length; i++) {
+
+            if (i < ar.length - 1 && ar[i] == ar[i + 1]) {
+                count++;
+            } 
+         else {
+        System.out.println(ar[i] + " " + count);
+          count = 1;
+             }
+                
+            }
+        }
+    }
+}
+
+
+openct1@yopmail.com
+openct@1235opmail
+https://demo.opencart.com/
+
+
+public class EvenNumbers {
+    public static void main(String[] args) {
+
+        int[] arr = {1, 2, 3, 4, 5, 6};
+
+        for (int i=0;i<=arr.length;i++) {
+            if (a[i] % 2 == 0) {
+                System.out.println(a[i]);
+            }
+        }
+    }
+}
+⭐ SECTION 1: BASIC PROGRAMS (1–15)
+1. Reverse a number(Done)
+2. Reverse a string(done)
+3. Palindrome number(done)
+4. Palindrome string(done)
+5. Armstrong number(done)
+6. Fibonacci series(done)
+7. Factorial of a number(done)
+8. Prime number check(done)
+9. Sum of digits(done)
+10. Product of digits(done)
+11. Count digits in a number(done)
+12. Swap two numbers(done)
+13. Find largest number in array(done)
+14. Find smallest number in array(done)
+15. Second largest number in array(done)
+⭐ SECTION 2: ARRAY PROGRAMS (16–25)
+16. Sort array (ascending/descending)(done)
+17. Remove duplicates from array(done)
+18. Find missing number in array(done)
+19. Find duplicate elements(done)
+20. Sum of array elements(done)
+21. Average of array(done)
+22. Find even and odd numbers in array(done)
+23. Merge two arrays(done)
+24. Rotate array left/right(done)
+25. Frequency of elements in array
+⭐ SECTION 3: STRING PROGRAMS (26–35)
+26. Reverse string without built-in function(done)
+27. Count vowels and consonants(done)
+28. Remove spaces from string(done)
+29. Character frequency count(done)
+30. Find duplicate characters in string(done)
+31. First non-repeating character(done)
+32. String anagram check(done)
+33. Convert uppercase to lowercase(done)
+34. Replace characters in string(done)
+35. Find longest word in sentence(done)
+⭐ SECTION 4: LOGICAL & PATTERN (36–45)
+36. Pyramid pattern(done)
+37. Number triangle pattern(done)
+38. Star pattern
+39. Diamond pattern
+40. Half pyramid
+41. Floyd’s triangle
+42. Pascal’s triangle
+43. Print ASCII values
+44. Leap year program
+45. Power of a number
+⭐ SECTION 5: ADVANCED / INTERVIEW LEVEL (46–50)
+46. Find second largest without sorting
+47. Find second smallest number
+48. Check if array is sorted
+49. Find common elements in two arrays
+50. Find missing number in sequence
+
+Find First Non-Repeated Character 
+5. Find First Repeated Character 
+6. Find Second Repeated Character 
+7. Remove Duplicate Character
+Count Character Occurrences
+
+
+ http://192.168.29.198:4444
+
+ http://192.168.29.198:4444.
+
+1.Remove special char and print summ of all digits
+
+public class sum{
+public static void main (String[] args){
+String s="12345678sdfghjvcg";
+int sum=0;
+String s1=s.replaceAll("[^0-9]", "");
+System.out.println(s1);
+int num = Integer.parseInt(s1);
+while(num>0){
+int d=num%10;
+sum=sum+d;
+num=num/10;
+}
+System.out.println(sum);
+}
+}
+
+2.sunday ,monday,tuesday,wednesday,thirsday,friday,saturday print in assending order.
+import java.util.Arrays;
+public class Weekday{
+public static void main (String[] args){
+String s[]={"sunday", "monday", "tuesday","wednesday","thursday","friday","saturday"};
+Arrays.sort(s);
+
+for(String day:s){
+System.out.println(day);
+}
+}
+
+
+==============
+import org.openqa.selenium.WebDriver;
+import java.time.Duration;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.JavascriptExecutor;
+public class Scroll{
+WebDriver driver=new ChromeDriver();
+driver.get("url1");
+driver.manage().window.maximize();
+driver.manage().timeouts.implicitlyWait(Duration.ofSeconds(10));
+JavascriptExecutor js=(JavascriptExecutor) driver;
+js.executeScript("window.scrollBy(0,500)");
+
+JAVA_100_Q
+===========
+Q1. Can we define static variables inside the static method or not? 
+Q2. In project when we will instance & static varaibles give the scenario? 
+Q3. When we will use for vs. for-each? 
+Q4. Define JDK vs. JRE vs. JVM?
+Q5. How many parts of java?
+Q6. What is the purpose of methods? 
+Q7. Define class vs.Object?
+Q8. Define and(&),or(|)?
+Q9. Define the constructor?
+Q10. define break vs. continue? 
+Q11.  Define the package in java? 
+Q12. What is the difference between bitwise & logical operator? 
+Q13. What are the entry controlled loop & exit controll loop? 
+Q14. When we will get StackOverflowError?
+Q15. Explain instance & static blocks? What is the purpose of blocks? 
+Q16.  What are the different ways to load the .class file into memory?
+Q17. How to call the constructor in java?Is it one constructor can call multiple constructors? 
+Q18. What is method recursion?
+Q19. What are the Different ways to call the static members in java?
+Q20. When we will use switch & else-if statements in Application?
+Q21. When we will use for vs. while loops in Application?
+Q22. Can we access the other packages classes without import statements?
+Q23. What is the difference between the normal import & static import?
+Q24. What are the modifiers applicable to constructors?
+Q25. Explain System.out.println()?
+Q26. Can we access sub-packages data when we import main package with*?
+Q27. What are the Permission/Scoping modifiers in java?
+Q28. Define inheritance? how many types inheritance in java?
+Q29. Explain about Object class in java? 
+Q30. Define the Polymorphism? How many types of Polymorphisms in java?
+Q31. What are the Different types of overloading in java? What is the advantage? 
+Q32. What is method Overriding? what is the advantage?
+Q33. What are the rules to fallow while overriding the method?
+Q34. What is Co-variant return type in java?
+Q35. What is Method overriding & method hiding in java?
+Q36. What is the advantage of parent class reference hilding the Child class object? or What is runtime polymorphism? 
+Q37. Explain about final modifier/prevention modifier in java?
+Q38. Define abstract methods & normal methods in java?
+Q39. Explain normal classes & abstract classes in java? 
+Q40. what is the abstraction concept in java? What is the advantage of abstraction?
+Q41. Explain about interfaces in java? 
+Q42. What is the difference between interfaces & abstract classes & normal classes & client code?
+Q43. How to clone the objects in java? What is the advantage?
+Q44. What the new features about interfaces in java?
+Q45. Explain about functional interfaces in java? 
+Q46. What is the meaning of Automatic garbage collection?
+Q47. What are the Different ways to call the Garbage Collector?
+Q48. What are the Different ways to make the object un-referenced?
+Q49. Explain Encapsulation mechanism in java?
+Q50. What are the different ways to initialize the data in java explain?
+Q51. Define type conversion? what are the different types of type conversions in java?  
+Q52. Why method signature of main() method is always public static void main(String[] args) ?
+Q53. Though interface is a pure abstract class then why interfaces are needed 
+Q54. Define the exception? What is the main objective of exception handling?
+Q55. what are the types of exceptions in java?
+Q56. What are the differnet ways to handle the exceptions in java? 
+Q57. What are the possible ways to handle the multiple exceptions in java?
+Q58. What is the purpose of try-with resources concept?
+Q59. What is the purpose of finally block?
+Q60. What is the purpose of throw keyword? How to handle the userdefined exceptions in java? 
+.
+.
+Q81. Explain Daemon & non-Daemon threads in java?
+Q82. Explain thread names & priority in java?
+Q83. Explain sleep() vs. join() vs. wait()? 
+Q84. What is the purpose of Assertions in java?
+Q85. Define the array? what are the advantages of arrays?
+Q86. What is the main objective of Collection framework? What are the parts in Collections f/w?
+Q87. What are the difference between Collections & Arrays?
+Q88. What are the difference between List & Set?
+Q89. How to add one collection data into another?
+Q90. What are the Differences between ArrayList & LinkedList?
+Q91. What are the Differeent ways to read the data from collection classes?
+Q92. What is the purpose of cursor? Explain the cursors in java?
+Q93. What are the conditions we need to fallow while sorting Collection data?
+Q94. what is the purpose of serialization & Desrialization process? How to prevent serialization?
+Q95. What is Type Earser in java?
+Q96. What is the Difference between Comparable vs. Comparator?
+Q97. In application when we will use Map classes?
+Q98. What is the purpose of streams API in java?
+Q99. How to convert Arrays to Collections & Collections to Arrays?
+Q100. What is the purpose of WildCard symbol(?) in Generics?
+
+
+1).hdhgdgs%$$#h2b@aui print vowles in left ,consonant in middile special char in right.
+public class test1
+{
+public static void main (String[] args)
+{
+String s="hdhgdgs%$$#h2b@aui";
+String vowels=s.replaceAll("[^aeiou]","");
+String con=s.replaceAll("[^a-zA-Z]","").replaceAll("[aeiou]","");
+String sc=s.replaceAll("[a-zA-Z]","");
+String result=vowels+con+sc;
+System.out.print(result);
+}
+}
+2)char count
+import java.util.*;
+String s="abcdescabsef";
+HasMap<Integer, Character> map= new HapMap<>();
+for(char ch:s.toCharArray()){
+map.put(ch.map.getOrDefault(ch,0)+1);
+}
+System.out.println(map);
+}
+
+3) first non repeating character in a string?
+import java.util.HashMap;
+public class test1{
+public static void main (String []args){
+String s="aabbccddfeegg";
+HashMap<Character , Integer>map=new HashMap<>();
+for (Char ch:s.toxharArray()){
+map.put(ch.map.getOrDefault(ch , 0)+1)
+if(map.get(ch)==1){
+System.out.println(ch);
+}
+}
+}
+}
+
+Project:
+https://demo.guru99.com/V4/
+test_selenium12@yopmail.com
+
+User ID :	mngr662681
+Password  gaqypAv
+https://demo.guru99.com/V4/manager/Managerhomepage.php
+
+package com.inetBanking.testCases;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.inetBanking.pageObject.LoginPage;
+
+public class TC_LoginTest_001 extends BaseClass {
+	@Test
+	public void logintest() {
+	    driver.manage().window().maximize();
+
+	    LoginPage lp = new LoginPage(driver);
+	    lp.setUserName(username);
+	    lp.setPassword(password);
+	    lp.clickSubmit();
+
+	    Assert.assertEquals(driver.getTitle(),
+	            "Guru99 Bank Manager HomePage");
+	}
+}
+
+
+package com.inetBanking.pageObject;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPage {
+
+    public LoginPage(WebDriver driver) 
+    {
+        PageFactory.initElements(driver, this);
+    }
+
+    @FindBy(name = "uid")
+    WebElement txtUserName;
+
+    @FindBy(name = "password")
+    WebElement txtPassword;
+
+    @FindBy(name = "btnLogin")
+    WebElement btnLogin;
+
+    public void setUserName(String uname) {
+        txtUserName.sendKeys(uname);
+    }
+
+    public void setPassword(String pwd) {
+        txtPassword.sendKeys(pwd);
+    }
+
+    public void clickSubmit() {
+        btnLogin.click();
+    }
+}
+
+Most Asked Collection Coding Questions
+Remove duplicates from List.
+public class testRemoveDuplicated{
+public static void main (String[] args){
+List<Integer> list=Arrays.asList(10,20,30,20,10,50,60);
+Set<Integer>set=new HashSet<>();
+for(Integer num:list){
+set.add(num);
+}
+System.out.println(set);
+}
+}
+
+Find duplicate elements.
+public class FindDuplicate{
+public static void main(String[] args){
+int a[]={10,20,30,40,50,20,10,30};
+HashSet<Integer> unique=new HashSet<>();
+HashSet<Integer> duplicate=new HashSet<>();
+for (int num:a){
+if(!unique.add(num))
+{duplicate.add(num);}
+}
+System.out.println(duplicate);
+}
+}
+
+
+
+Count frequency using HashMap.
+Reverse ArrayList.
+Sort List ascending/descending.
+Find first non-repeated character.
+Find common elements between two lists.
+Find second largest element.
+Sort HashMap by key/value.
+Convert List to Set and Set to List.
+Count character occurrences.
+Highest frequency element.
+Merge collections.
+Remove null values.
+Comparator and Comparable coding examples.
+
+Q) public testSkip{
+@Test
+void skipmethod(){
+WebDriver driver= new ChromeDriver();
+driver.get("url");
+String brower="firefox";
+
+if (!browser.equals("Chrome"){
+throw new SkipException("Skip this method");
+}
+System.out.println("Execute the method");
+}
+
+
+Q) Data provider test?
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+public class Dataprovider{
+
+@DataProvider(name=datatransfer)
+public UserId()
+{
+Object UserId[][]=
+{"User1","Pass1"};
+{"User2","Pass2"};
+{"User3","Pass3"};
+{"User4","Pass4"};
+
+};
+return user;
+}
+
+@Test(dataProvider="datatransfer")
+void Login(String email,String pass)
+{
+WebDriver driver=new ChromeDriver();
+
+driver.get("url1");
+driver.findElement(By.xpath("//url1").sendKeys(email);
+driver.findElement(By.xpath("//url2").sendKeys(pass);
+driver.quit();
+}
+}
